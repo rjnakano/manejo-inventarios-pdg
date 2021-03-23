@@ -1,2 +1,3 @@
 title,link
 "50 Tips: Data Science (tabular data) for beginner","https://www.kaggle.com/vbmokin/50-tips-data-science-tabular-data-for-beginner"
+"k-modes GitHub","https://github.com/nicodv/kmodes"
