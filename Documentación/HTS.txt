@@ -1,0 +1,5 @@
+The Harmonized Tariff Schedule of the United States (HTSUS or HTS) is a U.S. nomenclature system used to classify traded goods based on their material composition, product name, and/or intended function. The HTS is a 10-digit code designed so that each article falls into only one category. U.S. International Trade Commission
+
+https://hts.usitc.gov/
+
+
