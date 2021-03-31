@@ -1,3 +1,5 @@
 title,link
 "50 Tips: Data Science (tabular data) for beginner","https://www.kaggle.com/vbmokin/50-tips-data-science-tabular-data-for-beginner"
 "k-modes GitHub","https://github.com/nicodv/kmodes"
+"Kaggle. k-prototypes","https://www.kaggle.com/rohanadagouda/unsupervised-learning-using-k-prototype-and-dbscan"
+"Clustering with mixed categorical and continous data","https://www.tomasbeuzen.com/post/clustering-mixed-data/"
