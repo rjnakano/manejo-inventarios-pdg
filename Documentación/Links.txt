@@ -1,5 +1,12 @@
 title,link
 "50 Tips: Data Science (tabular data) for beginner","https://www.kaggle.com/vbmokin/50-tips-data-science-tabular-data-for-beginner"
 "k-modes GitHub","https://github.com/nicodv/kmodes"
+"Silueta? (enhancement) ver GitHub nicodv - Junio 15 2017","https://github.com/nicodv/kmodes/issues/46"
 "Kaggle. k-prototypes","https://www.kaggle.com/rohanadagouda/unsupervised-learning-using-k-prototype-and-dbscan"
 "Clustering with mixed categorical and continous data","https://www.tomasbeuzen.com/post/clustering-mixed-data/"
+"Silhouette Visualizer","https://www.scikit-yb.org/en/latest/api/cluster/silhouette.html"
+"K-Prototypes - Customer Clustering with Mixed Data Types","https://antonsruberts.github.io/kproto-audience/"
+"Unsupervised Learning using K-prototype and DBscan","https://www.kaggle.com/rohanadagouda/unsupervised-learning-using-k-prototype-and-dbscan"
+"KMeans Silhouette Score Explained With Python Example","https://dzone.com/articles/kmeans-silhouette-score-explained-with-python-exam"
+"sklearn.metrics.pairwise_distances","https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html"
+"sklearn.metrics.silhouette_score","https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html"
