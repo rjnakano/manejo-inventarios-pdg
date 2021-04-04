@@ -11,3 +11,6 @@ title,link
 "kmodes 0.11.0","https://pypi.org/project/kmodes/#huang97"
 "sklearn.metrics.pairwise_distances","https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html"
 "sklearn.metrics.silhouette_score","https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html"
+"Pairwise distances for mixed data","https://stackoverflow.com/questions/56126913/efficient-implementation-of-pairwise-distances-computation-between-observations"
+"Sihoutte - source code","https://gist.github.com/AlexandreAbraham/5544803"
+"Gower distance","https://sourceforge.net/projects/gower-distance-4python/files/"
