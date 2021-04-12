@@ -1,0 +1,13 @@
+Clustering jerarquico
+
+https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html
+https://hdbscan.readthedocs.io/en/latest/comparing_clustering_algorithms.html
+https://hdbscan.readthedocs.io/en/latest/basic_hdbscan.html#distance-matrices
+
+https://pypi.org/project/gower/
+
+https://pypi.org/project/hdbscan/
+
+https://www.youtube.com/watch?v=dGsxd67IFiU
+
+
