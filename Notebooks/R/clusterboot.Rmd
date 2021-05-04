@@ -1,0 +1,67 @@
+---
+title: "Clusterboot"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Cargue de datos
+
+```{r import}
+library(ggplot2)
+library(caret)
+library(corrplot)
+library(fpc)
+library(cluster)
+library(factoextra)
+library(data.table)
+setwd("D:/Documentos/Maestría Ciencia de Datos/Proyecto de Grado/manejo-inventarios-pdg/Datos/Transformed")
+df <- read.csv("df042421.csv", header = TRUE)
+df$AISLE = factor(df$AISLE)
+
+## distance = read.csv("scores2.csv",header = FALSE)
+
+head(df)
+```
+
+## Including Plots
+
+```{r clusterboot_test}
+df_test = head(df)
+```
+
+```{r clusterboot3}
+set.seed(3333)
+modelo_bootstrap_km <- clusterboot(df_test, clustermethod = kmeansCBI, krange=4, B=100, iter.max=150, distances=TRUE)
+modelo_bootstrap_km$result$partition[1:10] # los clusters de cada una de las primeras 10 instancias de datos
+modelo_bootstrap_km$bootmean #vector de las estabilidades de cada cluster (promedio de Jaccard)
+modelo_bootstrap_km$bootbrd # número de disoluciones de los clusters en los B runs ejecutados (Jaccard < 0.5)
+modelo_bootstrap_km$bootrecover # número de recuperaciones de los clusters en los B runs ejecutados (Jaccard > 0.75)
+```
+```{r prueba}
+
+#install.packages('clustMixType')
+
+library(clustMixType)
+
+n <- 100
+prb <- 0.9
+muk <- 1.5
+clusid <- rep(1:4, each = n)
+x1 <- sample(c("A","B"), 2*n, replace = TRUE, prob = c(prb, 1-prb))
+x1 <- c(x1, sample(c("A","B"), 2*n, replace = TRUE, prob = c(1-prb, prb)))
+x1 <- as.factor(x1)
+x2 <- sample(c("A","B"), 2*n, replace = TRUE, prob = c(prb, 1-prb))
+x2 <- c(x2, sample(c("A","B"), 2*n, replace = TRUE, prob = c(1-prb, prb)))
+x2 <- as.factor(x2)
+x3 <- c(rnorm(n, mean = -muk), rnorm(n, mean = muk), rnorm(n, mean = -muk), rnorm(n, mean = muk))
+x4 <- c(rnorm(n, mean = -muk), rnorm(n, mean = muk), rnorm(n, mean = -muk), rnorm(n, mean = muk))
+x <- data.frame(x1,x2,x3,x4)
+x
+kpres <- kproto(x, 4)
+kpres
+clprofiles(kpres, x)
+```
+
