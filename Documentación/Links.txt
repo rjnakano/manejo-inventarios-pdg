@@ -14,3 +14,4 @@ title,link
 "Pairwise distances for mixed data","https://stackoverflow.com/questions/56126913/efficient-implementation-of-pairwise-distances-computation-between-observations"
 "Sihoutte - source code","https://gist.github.com/AlexandreAbraham/5544803"
 "Gower distance","https://sourceforge.net/projects/gower-distance-4python/files/"
+"Chi square tests","https://machinelearningmastery.com/chi-squared-test-for-machine-learning/"
